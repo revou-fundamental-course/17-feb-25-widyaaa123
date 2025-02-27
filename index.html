@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Agent</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Css\style.css">
 </head>
 
 <body>
     <!-- Header & Navigation -->
     <header class="main-header">
-        <!-- Logo Company -->
-        <div class="logo-company"></div>
+        <div class="logo-company">
+            <img src="asset/logo.png" alt="Travel Logo">
+        </div>
 
         <nav>
             <a href="#" class="no-border-radius-right">Home</a>
@@ -28,52 +29,98 @@
     <!-- Main Content -->
     <main>
         <header>
-            <h1>Your Trusted Travel Agent</h1>
-
-            <h4>Your Happiness is Our Happiness</h4>
+            <h1>🌍✈️ Your Trusted Travel Agent 🏝️🚢</h1>
+            <h4>😊 Your Happiness is Our Happiness ❤️</h4>
         </header>
 
         <section class="main-content">
             <!-- Banner Autoslide -->
-            <aside class="main-container">
-                <p>Banner Autoslide</p>
+            <aside class="banner-container">
+                <div class="banner">
+                    <img src="Asset\Tour1.jpg" class="slide" alt="Slide 1">
+                    <img src="Asset\Tour2.jpg" class="slide" alt="Slide 2">
+                    <img src="Asset\Tour3.jpg" class="slide" alt="Slide 3">
+                </div>
             </aside>
 
             <!-- Form Contact Us -->
-            <aside class="main-container">
-                <p>Form Contact Us</p>
+            <aside class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="destination">Travel Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="form-message"></p>
             </aside>
         </section>
 
         <!-- Our Packages Section -->
-        <section id="our-package-section">
-            <header>
-                <h2>Our Packages</h2>
-            </header>
+<section id="our-package-section">
+    <header>
+        <h2 class="our-package">Our Packages</h2>
+        <p>Explore our exclusive travel packages designed just for you! From breathtaking beaches to majestic mountains, we have something for every traveler.</p>
+    </header>
+    <br>
 
-            <!-- Content Our Packages -->
-            <article class="our-package-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
-            </article>
-        </section>
+    <div class="package-container">
+        <div class="package">
+            <img src="Asset\pantai.jpg" alt="Beach Vacation">
+            <h3>Beach Paradise</h3>
+            <p>Enjoy a relaxing getaway to the most beautiful beaches in the world. Perfect for sunbathing, swimming, and water sports!</p>
+            <button>Learn More</button>
+        </div>
 
-        <!-- Call Us Section -->
-        <section id="call-us-section">
-            <header>
-                <h2>Call Us</h2>
-            </header>
+        <div class="package">
+            <img src="Asset\gunung.jpg" alt="Mountain Adventure">
+            <h3>Mountain Adventure</h3>
+            <p>Explore breathtaking mountains, go hiking, and experience nature like never before. Ideal for adventure seekers!</p>
+            <button>Learn More</button>
+        </div>
 
-            <!-- Content Call Us Packages -->
-            <article class="call-us-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
-            </article>
-        </section>
-    </main>
+        <div class="package">
+            <img src="Asset\city.jpg" alt="City Tour">
+            <h3>City Explorer</h3>
+            <p>Discover the most vibrant cities in the world. Enjoy cultural tours, shopping, and amazing food experiences.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</section>
+
+        <!-- Call Us Section --> 
+<section id="call-us-section">
+    <header>
+        <h2>Call Us</h2>
+    </header>
+    <article class="call-us-content">
+        <div class="social-icons">
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="Asset\WA.jpg" alt="WhatsApp"> WhatsApp
+            </a>
+            <a href="https://instagram.com/travelcompany" target="_blank">
+                <img src="Asset\IG.jpg" alt="Instagram"> Instagram
+            </a>
+            <a href="https://facebook.com/travelcompany" target="_blank">
+                <img src="Asset\FB.png" alt="Facebook"> Facebook
+            </a>
+        </div>
+    </article>
+</section>
 
     <!-- Footer -->
     <footer>
         <p>Made by widyaa</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="JavaScript\script.js"></script>
 </body>
 
 </html>
